@@ -1,0 +1,27 @@
+{
+  "name": "notion-qa-sync",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm --watch src/index.ts",
+    "test": "node --loader ts-node/esm src/test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "MCP Server for AI-Notion Integration",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@notionhq/client": "^2.2.14",
+    "dotenv": "^16.3.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
